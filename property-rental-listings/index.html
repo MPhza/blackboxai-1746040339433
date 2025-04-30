@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Property Rental Listings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f9fafb, #e0e7ff);
+      color: #1e293b;
+    }
+    header {
+      background-color: #4338ca;
+      color: white;
+      box-shadow: 0 4px 6px rgba(67, 56, 202, 0.3);
+    }
+    footer {
+      background-color: #4338ca;
+      color: white;
+      box-shadow: 0 -4px 6px rgba(67, 56, 202, 0.3);
+    }
+    .btn-primary {
+      background-color: #6366f1;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #4f46e5;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <header class="p-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold tracking-wide">Property Rental Listings</h1>
+      <nav>
+        <ul class="flex space-x-6 text-white font-semibold">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+          <li><a href="../rental-rating-app/index.html" class="hover:underline">Rental Ratings</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow container mx-auto p-6">
+    <section class="mb-12 text-center">
+      <h2 class="text-4xl font-extrabold mb-4">Find Your Next Rental Property</h2>
+      <p class="text-lg max-w-2xl mx-auto mb-6">
+        Browse available rental units with detailed descriptions and photos. Find the perfect place to call home.
+      </p>
+      <button class="btn-primary px-6 py-3 rounded-lg font-semibold shadow hover:shadow-lg transition">
+        Browse Listings
+      </button>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold mb-6 border-b-4 border-indigo-600 inline-block pb-1">Featured Properties</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <article class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
+          <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" alt="Modern Apartment" class="rounded-lg mb-4 w-full h-48 object-cover" />
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Modern Apartment in City Center</h3>
+          <p class="text-gray-700 mb-2">2 beds • 2 baths • 1200 sqft</p>
+          <p class="text-gray-700 mb-4">Close to public transport and shopping. Newly renovated with modern amenities.</p>
+          <p class="text-indigo-600 font-semibold text-lg">$1,800 / month</p>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
+          <img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg" alt="Cozy House" class="rounded-lg mb-4 w-full h-48 object-cover" />
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Cozy Family House</h3>
+          <p class="text-gray-700 mb-2">3 beds • 2 baths • 1800 sqft</p>
+          <p class="text-gray-700 mb-4">Quiet neighborhood with a large backyard and garage.</p>
+          <p class="text-indigo-600 font-semibold text-lg">$2,200 / month</p>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
+          <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" alt="Luxury Condo" class="rounded-lg mb-4 w-full h-48 object-cover" />
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Luxury Condo with City View</h3>
+          <p class="text-gray-700 mb-2">1 bed • 1 bath • 900 sqft</p>
+          <p class="text-gray-700 mb-4">High-rise building with gym, pool, and 24/7 security.</p>
+          <p class="text-indigo-600 font-semibold text-lg">$2,500 / month</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="p-6 text-center">
+    <p class="text-white text-sm">&copy; 2024 Property Rental Listings. All rights reserved.</p>
+  </footer>
+</body>
+</html>
