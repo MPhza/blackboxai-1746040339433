@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User Registration & Login - Rental Rating App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      color: #334e68;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+    .btn-primary {
+      background-color: #2563eb;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-white rounded-xl shadow-lg p-8 max-w-md w-full">
+    <h1 class="text-2xl font-bold mb-6 text-center">User Registration</h1>
+    <form action="#" method="POST" class="space-y-4">
+      <div>
+        <label for="name" class="block text-gray-700 font-semibold mb-1">Name</label>
+        <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <div>
+        <label for="surname" class="block text-gray-700 font-semibold mb-1">Surname</label>
+        <input type="text" id="surname" name="surname" required class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <div>
+        <label for="email" class="block text-gray-700 font-semibold mb-1">Email</label>
+        <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <div>
+        <label for="password" class="block text-gray-700 font-semibold mb-1">Password</label>
+        <input type="password" id="password" name="password" required class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <div>
+        <label for="idnumber" class="block text-gray-700 font-semibold mb-1">ID Number</label>
+        <input type="text" id="idnumber" name="idnumber" required class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <div>
+        <label for="captcha" class="block text-gray-700 font-semibold mb-1">Captcha: What is 3 + 4?</label>
+        <input type="text" id="captcha" name="captcha" required placeholder="Enter the answer" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <button type="submit" class="btn-primary w-full py-3 rounded font-semibold">Register</button>
+    </form>
+
+    <hr class="my-6" />
+
+    <h2 class="text-xl font-bold mb-4 text-center">User Login</h2>
+    <form action="#" method="POST" class="space-y-4">
+      <div>
+        <label for="login-email" class="block text-gray-700 font-semibold mb-1">Email</label>
+        <input type="email" id="login-email" name="login-email" required class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <button type="submit" class="btn-primary w-full py-3 rounded font-semibold">Login</button>
+    </form>
+  </div>
+</body>
+</html>
