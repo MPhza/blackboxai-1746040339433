@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rental Rating App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      color: #334e68;
+    }
+    header {
+      background-color: #1e40af;
+      color: white;
+      box-shadow: 0 4px 6px rgba(30, 64, 175, 0.3);
+    }
+    footer {
+      background-color: #1e40af;
+      color: white;
+      box-shadow: 0 -4px 6px rgba(30, 64, 175, 0.3);
+    }
+    .btn-primary {
+      background-color: #2563eb;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #1d4ed8;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <header class="p-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold tracking-wide">Rental Rating Reference</h1>
+      <nav>
+        <ul class="flex space-x-6 text-white font-semibold">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+          <li><a href="#" class="hover:underline">Subscribe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow container mx-auto p-6">
+    <section class="mb-12 text-center">
+      <h2 class="text-4xl font-extrabold mb-4">Find Trusted Rentees and Renters</h2>
+      <p class="text-lg max-w-2xl mx-auto mb-6">
+        Check ratings and reviews to make informed rental decisions. Avoid bad tenants and unreliable renters with our trusted platform.
+      </p>
+      <button class="btn-primary px-6 py-3 rounded-lg font-semibold shadow hover:shadow-lg transition">
+        Get Started
+      </button>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold mb-6 border-b-4 border-blue-600 inline-block pb-1">Featured Profiles</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Profile Card Example -->
+        <article class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
+          <div class="flex items-center mb-5">
+            <div class="w-20 h-20 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 text-3xl font-bold">JD</div>
+            <div class="ml-5">
+              <h3 class="text-xl font-bold text-gray-900">John Doe</h3>
+              <p class="text-sm text-gray-600">Rentee</p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="flex items-center text-yellow-400 text-lg">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+              <span class="ml-3 text-gray-800 font-semibold text-base">3.5</span>
+            </div>
+            <p class="text-sm text-gray-500 mt-2">Based on 12 reviews</p>
+          </div>
+          <p class="text-gray-700 text-base leading-relaxed">
+            Reliable rentee with timely payments. Some minor complaints about property care.
+          </p>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
+          <div class="flex items-center mb-5">
+            <div class="w-20 h-20 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 text-3xl font-bold">AS</div>
+            <div class="ml-5">
+              <h3 class="text-xl font-bold text-gray-900">Alice Smith</h3>
+              <p class="text-sm text-gray-600 flex items-center gap-2">
+                Renter
+                <span class="text-blue-600 font-semibold text-xs bg-blue-100 rounded px-2 py-0.5 flex items-center gap-1" title="Subscribed User">
+                  <i class="fas fa-check-circle"></i> Subscribed
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="flex items-center text-yellow-400 text-lg">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span class="ml-3 text-gray-800 font-semibold text-base">5.0</span>
+            </div>
+            <p class="text-sm text-gray-500 mt-2">Based on 20 reviews</p>
+          </div>
+          <p class="text-gray-700 text-base leading-relaxed">
+            Excellent renter with well-maintained properties and clear communication.
+          </p>
+          <p class="text-gray-700 text-base mt-4">
+            <strong>Location:</strong> 123 Main St, Springfield, USA
+          </p>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300">
+          <div class="flex items-center mb-5">
+            <div class="w-20 h-20 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 text-3xl font-bold">MB</div>
+            <div class="ml-5">
+              <h3 class="text-xl font-bold text-gray-900">Mark Brown</h3>
+              <p class="text-sm text-gray-600">Rentee</p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="flex items-center text-yellow-400 text-lg">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <span class="ml-3 text-gray-800 font-semibold text-base">2.0</span>
+            </div>
+            <p class="text-sm text-gray-500 mt-2">Based on 5 reviews</p>
+          </div>
+          <p class="text-gray-700 text-base leading-relaxed">
+            Late payments and poor communication reported.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="p-6 text-center">
+    <p class="text-white text-sm">&copy; 2024 Rental Rating App. All rights reserved.</p>
+  </footer>
+</body>
+</html>
